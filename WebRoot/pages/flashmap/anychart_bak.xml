@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anychart>
+	<charts>
+		<chart plot_type="Map">
+			<chart_settings>
+				<title>
+				<font family="宋体" color="Black" size="15" bold="True" italic="False" underline="False" render_as_html="False" />
+					<text>江西地图</text>
+				</title>
+				 <controls>
+ 	          <navigation_panel width="50" height="50" enabled="true" position="right" align="near" inside_dataplot="true">
+ 	            <background enabled="false" />
+ 	          </navigation_panel>
+ 	          <zoom_panel width="50" enabled="true" position="right" align="near" inside_dataplot="true">
+ 	            <background enabled="false" />
+ 	          </zoom_panel>
+ 	        </controls>
+			</chart_settings>
+			<data_plot_settings>
+				<map_series source="jx_city.amap">
+					<projection type="mercator" />
+					<undefined_map_region palette="default">
+						<label_settings enabled="True" />
+					</undefined_map_region>
+				</map_series>
+				<marker_series>
+					<label_settings enabled="true">
+						<font family="宋体" color="Black" size="12" bold="True" italic="False" underline="False" render_as_html="False" />
+						<format>{%Name}</format>
+					</label_settings>
+					 <tooltip_settings enabled="true">
+					 <font family="宋体" color="Black" size="12" bold="True" italic="False" underline="False" render_as_html="False" />
+		 	              <format><![CDATA[在线站点数: {%Online}{numDecimals:0}
+离线站点数: {%Offline}{numDecimals:0}]]></format>
+		 	         </tooltip_settings>
+				</marker_series>
+			</data_plot_settings>
+			<data>
+				<series type="Marker" style="Cities">
+					<point name="九江" y="29.63" x="116.08">
+					   <attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[10]]></attribute>
+		 	           </attributes>
+		 	           <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="南昌" y="28.61" x="115.92" >
+					 <attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[20]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="景德镇" y="29.18" x="117.21" >
+					 <attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[8]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="上饶" y="28.47" x="117.88" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[12]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="鹰潭" y="28.21" x="117.09" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[7]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="抚州" y="28.01" x="116.39" >
+						<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[14]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="新余" y="27.89" x="114.93" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[3]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="宜春" y="27.79" x="114.33" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[6]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="萍乡" y="27.56" x="113.79" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[8]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="吉安" y="27.05" x="114.77" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[2]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+				<series type="Marker" style="Cities">
+					<point name="赣州" y="25.75" x="114.85" >
+					<attributes>
+ 	              		  <attribute name="Online"><![CDATA[0]]></attribute>
+		 	              <attribute name="Offline"><![CDATA[16]]></attribute>
+		 	           </attributes>
+		 	            <actions>
+ 	    					<action type="navigateToURL" url="../real_data/index.jsp" target="frm_home_main"/>
+ 	  					</actions>
+					</point>
+				</series>
+			</data>
+			<styles>
+				<marker_style name="Cities" color="Red">
+					<marker size="5" type="Circle" />
+					<border color="Black" thickness="1" />
+				</marker_style>
+			</styles>
+		</chart>
+	</charts>
+</anychart>

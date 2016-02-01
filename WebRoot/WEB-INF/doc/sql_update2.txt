@@ -1,0 +1,215 @@
+
+create table t_cfg_trade(trade_id int primary key,trace_name varchar(100),trade_desc varchar(100));
+alter table t_cfg_trade add(trade_name varchar(100));
+alter table t_cfg_trade add(trace_name varchar(100));
+	 
+
+ alter table t_cfg_parameter add (parameter_type_name varchar(200));
+ 
+ 
+ 
+update t_cfg_parameter set parameter_type_name='仪器状态' where  parameter_type_id='meachine_state';
+
+update t_cfg_parameter set parameter_type_name='通讯状态' where parameter_type_id='comm_state';
+
+update t_cfg_parameter set parameter_type_name='审核状态' where parameter_type_id='data_check_type';
+
+update t_cfg_parameter set parameter_type_name='协议类型' where parameter_type_id='protocal_type';
+update t_cfg_parameter set parameter_type_name='事件类型' where parameter_type_id='event_type';
+update t_cfg_parameter set parameter_type_name='执行标准' where parameter_type_id='exe_standard';
+update t_cfg_parameter set parameter_type_name='功能区' where parameter_type_id='function_area';
+update t_cfg_parameter set parameter_type_name='排污去向' where parameter_type_id='let_place';
+update t_cfg_parameter set parameter_type_name='排污方式' where parameter_type_id='let_rule';
+update t_cfg_parameter set parameter_type_name='监测方式' where parameter_type_id='mon_mode';
+update t_cfg_parameter set parameter_type_name='企业规模' where parameter_type_id='station_size';
+update t_cfg_parameter set parameter_type_name='企业类型' where parameter_type_id='enterprise_type';
+update t_cfg_parameter set parameter_type_name='监测类型' where parameter_type_id='monitor_type';
+update t_cfg_parameter set parameter_type_name='数据来源' where parameter_type_id='data_gen_flag';
+update t_cfg_parameter set parameter_type_name='报警类型' where parameter_type_id='warn_type';
+
+update t_cfg_parameter set parameter_type_name='断面类型' where parameter_type_id='surface_type';
+update t_cfg_parameter set parameter_type_name='报警处理状态' where parameter_type_id='warn_handle_status';
+update t_cfg_parameter set parameter_type_name='通道类型' where parameter_type_id='channels_type';
+update t_cfg_parameter set parameter_type_name='测试参数类型' where parameter_type_id='test_param_type';
+ 
+ 
+ 
+ 
+ create or replace view v_view_hour as
+select station_id, m_time
+           from t_monitor_real_hour 
+          where m_time > sysdate - 1/24;
+          
+          
+ create or replace view v_view_real as
+select station_id, infectant_id, m_time, m_value
+           from t_monitor_real_minute a
+          where m_time > sysdate - 1/24;
+          
+       
+
+create or replace view view_hour_today as
+  select * 
+ from t_monitor_real_hour where m_time>=trunc(sysdate);
+
+
+create or replace view view_minute_today as
+  select * 
+  from t_monitor_real_minute where m_time>=trunc(sysdate);
+
+create or replace view view_infectant_info as 
+ select 
+ infectant_id,
+ infectant_name,
+ infectant_unit,
+ station_type,
+ infectant_type,
+ infectant_column,
+ infectant_order 
+  from t_cfg_infectant_base;
+
+         
+   
+ create or replace view view_warn_today as
+ select * from t_monitor_warning_real  where start_time>=trunc(sysdate);
+
+
+
+ alter table t_cfg_station_info add(sp_user varchar(20));
+ alter table  t_cfg_station_info  add(sp_pwd varchar(20));
+ alter table  t_cfg_station_info  add(sp_port varchar(20));
+
+
+ alter table  t_cfg_station_info  add(station_bz varchar(50));        
+ 
+ 
+alter table t_cfg_station_info add (station_no number(5));
+alter table t_cfg_station_info add (station_addr varchar(100));
+alter table t_cfg_station_info add (pfqx varchar(100));
+alter table t_cfg_station_info add (ctl_type varchar(1));
+alter table t_cfg_station_info add (ywdw varchar(100));
+alter table t_cfg_station_info add (ywdw_man varchar(50));
+alter table t_cfg_station_info add (ywdw_man_phone varchar(100));
+alter table t_cfg_station_info add (jsdw varchar(100));
+alter table t_cfg_station_info add (ssgl_man varchar(50));
+alter table t_cfg_station_info add (ssgl_man_phone varchar(100));
+alter table t_cfg_station_info add (scqk varchar(100));
+alter table t_cfg_station_info add (show_flag varchar(1));
+alter table t_cfg_station_info add (flag_1452 varchar(1));
+
+
+
+alter table t_cfg_station_info add station_no numeric(5,0);
+alter table t_cfg_station_info add station_addr varchar(100);
+alter table t_cfg_station_info add pfqx varchar(100);
+alter table t_cfg_station_info add ctl_type varchar(1);
+alter table t_cfg_station_info add ywdw varchar(100);
+alter table t_cfg_station_info add ywdw_man varchar(50);
+alter table t_cfg_station_info add ywdw_man_phone varchar(100);
+alter table t_cfg_station_info add jsdw varchar(100);
+alter table t_cfg_station_info add ssgl_man varchar(50);
+alter table t_cfg_station_info add ssgl_man_phone varchar(100);
+alter table t_cfg_station_info add scqc varchar(100);
+alter table t_cfg_station_info add scqk varchar(100);
+alter table t_cfg_station_info add show_flag varchar(1);
+alter table t_cfg_station_info add flag_1452 varchar(1);
+
+
+
+  create table t_cfg_station_col(
+ col_id int primary key,
+ col_name varchar(100)
+ );
+ 
+insert into t_cfg_station_col(col_id,col_name) values(1,'');
+insert into t_cfg_station_col(col_id,col_name) values(2,''); 
+insert into t_cfg_station_col(col_id,col_name) values(3,'');
+insert into t_cfg_station_col(col_id,col_name) values(4,''); 
+insert into t_cfg_station_col(col_id,col_name) values(5,''); 
+insert into t_cfg_station_col(col_id,col_name) values(6,''); 
+insert into t_cfg_station_col(col_id,col_name) values(7,''); 
+insert into t_cfg_station_col(col_id,col_name) values(8,''); 
+insert into t_cfg_station_col(col_id,col_name) values(9,''); 
+
+alter table t_monitor_real_day add (is_gz varchar(1));
+ 
+
+
+create table t_cfg_jsgs(jsgs_id int primary key,jsgs_name varchar(100),jsgs_desc varchar(500));
+         
+         
+         
+         
+         
+ 
+
+
+
+create table t_sys_res_new(
+res_id int primary key,
+res_pid int,
+res_name varchar(100),
+res_url varchar(200),
+res_target varchar(20),
+res_level varchar(1),
+is_menu varchar(1),
+res_order int,
+flag_acl varchar(1),
+flag_show varchar(1)
+);
+
+
+create table t_sys_ures(
+user_id int primary key,
+res_ids varchar(200)
+);
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(1,'部门管理','/pages/system/tab_dept/','1');
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(2,'用户管理','/pages/system/user/','2'); 
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(3,'站位管理','/pages/system/station/','3'); 
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(4,'行业管理','/pages/system/trade/','4');  
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(5,'视频设置','/pages/system/sp/','5'); 
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(6,'短信设置','/pages/system/msg/','6'); 
+ 
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(7,'污染源信息维护','/pages/system/station/wry/update.jsp','7');
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(8,'监测指标维护','/pages/system/station/infectant/update.jsp','8');
+  
+    
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(9,'备注修改','/pages/station_new/bz_update.jsp','9');
+  
+   
+insert into t_sys_res_new(res_id,res_name,res_url,flag_acl,res_order) 
+  values(10,'站位属性查看','/pages/system/station/view.jsp','0','10');
+  
+ create table t_user_focus(
+ user_id  int not null,
+ station_id varchar(30) not null,
+ primary key(user_id,station_id)
+ );
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

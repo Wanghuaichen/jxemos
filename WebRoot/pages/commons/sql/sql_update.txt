@@ -1,0 +1,10 @@
+create table T_TEST
+(
+  USER1 VARCHAR2(20),
+  PASS  VARCHAR2(20)
+);
+create table lshh
+(
+  STATION_ID        VARCHAR2(14) not null,
+  UNI_COM_ID        VARCHAR2(50)
+};

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="index.css"/>
+<script type="text/javascript" src="script/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+  	$(".nav li").click(function(){
+		$(this).addClass("current").siblings().removeClass("current");
+		var index = $(this).index();
+		$(".nd").eq(index).show().siblings().hide();
+	})
+	$(".nd li").click(function(){
+		$(this).addClass("current").siblings().removeClass("current");
+	})
+
+  })
+</script>
+<script type="text/javascript">
+	$(function(){
+ 	$(".tip").live('click',function(){
+		 $this = $(this);
+		 $(".h").hide();
+		 $this.animate({top:'0'},500,function(){
+			  $this.addClass("tip-selected");
+			 $this.removeClass("tip");
+			});	
+		 
+	})
+	
+	$(".tip-selected").live('click',function(){
+	     
+		 $this = $(this);
+		 $(".h").show();
+		 $this.css({top:'126px'});
+		  $this.removeClass("tip-selected");
+		 $this.addClass("tip");
+		 
+	})
+	})
+
+</script>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+.l {
+	float:left;
+	width:210px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height:100%;
+	position:relative;
+	background:#e1efe3;
+}
+.h {
+	position:relative;
+}
+.r {
+	float:left;
+	height:100%;
+	white-space: nowrap;
+	width: 80%;
+	position:relative;
+}
+.tip {
+	width:89px;
+	height:23px;
+	background:url(images/tip.png) no-repeat;
+	z-index:9999;
+	position:absolute;
+	right:59px;
+	top:126px;
+	display:block;
+	cursor:pointer;
+}
+.tip-selected {
+	width:89px;
+	height:23px;
+	background:url(images/tip.png) no-repeat left -22px;
+	cursor:pointer;
+	z-index:9999;
+	position:absolute;
+	right:59px;
+	top:126px;
+	display:block;
+}
+</style>
+<title>无标题文档</title>
+</head>
+<body>
+<div class="header h">
+  <h1 class="logo"> <a href="#"><img src="images/LOGO.png" /></a> </h1>
+  <ul  class="nh">
+    <li class="name"><a href="#">李文斌</a></li>
+    <li>|</li>
+    <li><a href="#">帮助</a></li>
+    <li>|</li>
+    <li><a href="#">退出</a></li>
+  </ul>
+  <div class="nav">
+    <ul class="nav-tabs">
+      <li class="current"><a href="#"><span>实时监控</span></a></li>
+      <li><a href="#"><span>数据审核</span></a></li>
+      <li><a href="#"><span>统计报表</span></a></li>
+      <li><a href="#"><span>报警管理</span></a></li>
+      <li><a href="#"><span>电子地图</span></a></li>
+      <li><a href="#"><span>系统设置</span></a></li>
+    </ul>
+    <div class="mt"></div>
+  </div>
+  <div class="nq">
+    <div class="nr">
+      <ul class="nd">
+        <li class="nd-first current"><span>报警历史数据</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+      <ul class="nd" style="display:none;">
+        <li class="nd-first current"><span>111</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+      <ul class="nd" style="display:none;">
+        <li class="nd-first current"><span>2222</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+      <ul class="nd" style="display:none;">
+        <li class="nd-first current"><span>3333</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+      <ul class="nd" style="display:none;">
+        <li class="nd-first current"><span>444</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+      <ul class="nd" style="display:none;">
+        <li class="nd-first current"><span>5555</span></li>
+        <li><span>总量报警</span></li>
+        <li><span>设备故障报警</span></li>
+        <li class="nd-last"><span>维护记录</span></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+ <div class="f-nav">
+      <p><span>当前位置</span>>><a href="#">报警历史数据</a></p>
+    </div>
+<p class="tip"></p>
+<iframe src="main.html" style="  width:100%; min-height:500px; height:500px;" frameborder="0"></iframe>
+</body>
+</html>

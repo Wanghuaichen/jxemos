@@ -1,0 +1,90 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input { margin: 0; padding: 0; }
+body { font-size: 12px; font-family: "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif; _font-family: Tahoma, Arial, Helvetica, STHeiti, sans-serif; cursor: default; }
+html.hasFontSmoothing-false body { font-family: Tahoma, Arial, Helvetica, STHeiti; }
+a img, :link img, :visited img { border: 0; }
+table { border-collapse: collapse; }
+ul { list-style: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+ 
+.skin-button-willblue { -moz-user-select: none; -webkit-user-select: none; cursor: pointer; overflow: hidden; position: relative; zoom: 1; height: 39px; line-height: 37px; padding-left: 5px; text-align: center; color: #FFF; margin-left:12px; }
+.skin-button-willblue .ui-button-bg-left { display: block; position: absolute; left: 0; top: 0; width: 5px; height: 39px; }
+.skin-button-willblue .ui-button-label { padding-right: 5px; height: 39px; }
+.skin-button-willblue .ui-button-bg-left { background: url('images/button-bg.$5826.png') left -600px no-repeat; _background: url('images/button-bg-ie.$5826.png') left -600px no-repeat; }
+.skin-button-willblue .ui-button-label { background: url('images/button-bg.$5826.png') right -600px no-repeat; _background: url('images/button-bg-ie.$5826.png') right -600px no-repeat; }
+#ctrlbuttonlogin-submit:hover{ opacity:0.9; filter:opacity(alpha=90)}
+.right { float: right; }
+html { background: url(images/htmlbg.$5752.png) repeat; }
+#reg-login-switch { position: fixed; _position: absolute; right: -3px; top: 20px; }
+#reg-login-switch a { display: block; width: 93px; height: 44px; text-indent: -9999px; outline: none; background: url(images/reg-login-switcher.$6600.png) no-repeat; }
+#reg-login-switch #go-register { background-position: 0 -55px; }
+#reg-login-switch #go-register:hover { background-position: -120px -55px; }
+#reg-login-switch #go-login { background-position: 0 0; }
+#reg-login-switch #go-login:hover { background-position: -120px 0; }
+#startpage { overflow: hidden; padding-bottom: 20px; }
+#startpage #startpage-wrap { min-width: 900px; margin-left: -9999px; } 
+#startpage #logo-startpage span { display: block; height: 56px; margin: 0 auto 30px; position: relative; }
+#startpage #logo-startpage a { display: block; height: 50px; width:427px; text-indent: -9999px; background: url(images/LOGO.png) no-repeat left bottom; }
+#startpage #logo-startpage .register-logo { width: 440px; }
+#startpage #logo-startpage .login-logo { width:427px; }
+#startpage .input-wrap { width: 388px; height: 52px; margin-bottom: 3px;margin-left: 10px; background: url(images/startpage-0410.$6008.png) no-repeat -210px -52px; _background-image: url(images/startpage-0410-ie6.$6008.png); position: relative; margin-right: 5px; }
+#startpage .input-wrap label, #startpage .input-wrap .blogurl-address { position: absolute; width: 340px; height: 52px; margin: 0 10px; line-height: 52px; color: #ABACAD; font-size: 16px; left: 32px; top: 0; overflow: hidden; white-space: nowrap; z-index: 10; }
+#startpage .input-wrap.focus { background-position: -210px 0; }
+#startpage .input-wrap.focus label { color: #8F8F8F; }
+#startpage .input-wrap.error { background-position: 0 -196px; color: #AC0000; }
+#startpage .input-wrap .tip { position: absolute; width: 197px; height: 36px; line-height: 36px; background: url(images/startpage-1231.$5800.png) no-repeat -300px -130px; _background-image: url(images/startpage-1231-ie6.$5126.png); top: 50px; left: 10px; text-align: center; color: #8F8958; font-size: 12px; z-index: 0; }
+#startpage .input-wrap .input-icon { display: block; float: left; width: 16px; height: 16px; background: url(images/startpage-1231.$5800.png) no-repeat; _background-image: url(images/startpage-1231-ie6.$5126.png); margin: 18px 0 0 15px; _margin-left: 8px; }
+#startpage #input-reg-email .input-icon, #startpage #input-login-email .input-icon { background-position: 0 -197px; }
+#startpage #input-reg-email.focus .input-icon, #startpage #input-login-email.focus .input-icon { background-position: 0 -147px; }
+#startpage #input-reg-pwd .input-icon, #startpage #input-login-pwd .input-icon { background-position: 0 -300px; }
+#startpage #input-reg-pwd.focus .input-icon, #startpage #input-login-pwd.focus .input-icon { background-position: 0 -250px; }
+#startpage #input-login-pwd { margin-bottom: 20px; }
+#startpage #ctrlbuttonlogin-submitlabel { font-size: 14px; letter-spacing: 10px; }
+#startpage #ctrlbuttonreg-submitlabel { font-size: 14px; }
+#startpage #input-reg-blogurl { margin-bottom: 20px; }
+#startpage #input-reg-blogurl .input-icon { background-position: 0 -400px; }
+#startpage #input-reg-blogurl.focus .input-icon { background-position: 0 -350px; }
+#startpage #input-reg-blogurl .startpage-input-text { width: 125px; }
+#startpage #blogurl { visibility: hidden; font-size: 16px; padding-right: 1px; white-space: nowrap; }
+#startpage .startpage-input-text { width: 334px; padding: 10px; height: 32px; line-height: 32px; background: transparent url(images/blank.$166.png) repeat; border: 0; outline: none; font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti; position: absolute; font-size: 16px; color: #8F8F8F; z-index: 20; }
+#startpage html input:-webkit-autofill {
+ background-color: #FFF !important;
+}
+#startpage .help-link { color: #9ea0a3; text-decoration: none; font-size: 12px; line-height: 15px; }
+#startpage .help-link:hover { color: #8D8D8D; }
+#startpage #login-wrap { position: relative; margin: 0 auto; width:400px; padding-bottom: 10px; }
+#startpage #login-form-wrap { width: 288px; }
+#startpage .error-msg { height: 53px; line-height: 53px; width: 290px; color: #fff; font-size: 14px; color: #fff; text-align: center; background: url(images/startpage-error.$4598.png) no-repeat center center; }
+#startpage #login-err-msg { margin: -30px auto 30px; }
+#startpage #register-err-msg { margin-left: auto; margin-right: auto; }
+#startpage #forget-password { float: left; color: #9ea0a3; text-decoration: none; font-size: 12px; line-height: 15px; }
+ 
+#startpage .login-third-party-wrap #more-third-register { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; }
+#startpage #footer { position: absolute; width: 100%; font-size: 12px; color: #9ea0a3; bottom: 0px; text-align: center; }
+#startpage #footer a, #startpage #footer a:link, #startpage #footer a:visited { color: #9ea0a3; text-decoration: none; }
+#startpage #footer .footer-item { margin-left: 6px; }
+#startpage #footer a:hover { color: #8d8d8d; }
+#startpage .input-button { display: block; width: 96px; height: 45px; background: url(images/startpage-0410.$6008.png) no-repeat -400px -200px; _background-image: url(images/startpage-0410-ie6.$6008.png); border: 0; cursor: pointer; float: left; margin-top: 4px; font-size: 16px; color: #8C8C8D; }
+#startpage .input-button:hover { background-position: -400px -245px; }
+#startpage .input-button:active { background-position: -400px -290px; }
+#startpage #startpage { position: relative; height: 100%; }
+#startpage #more-about-diandian-holder { top: -9999px; background-color: #E9ECEE; height: 60px; border-top: 1px solid #D6DADD; -webkit-box-shadow: 0 0 3px #D6DADD; -moz-box-shadow: 0 0 3px #D6DADD; box-shadow: 0 0 3px #D6DADD; position: absolute; left: 0; width: 100%; }
+#startpage #more-about-diandian { width: 765px; margin: 0 auto; }
+#startpage #more-about-diandian .icon-link { display: block; height: 43px; width: 201px; text-indent: -9999px; outline: none; background: url(images/startpage-about.$5696.png) no-repeat; float: left; cursor: pointer; margin-top: 8px; }
+#startpage #more-about-diandian #about-diandian:hover { background-position: 0 -110px; }
+#startpage #more-about-diandian #blog-transfer-entry { width: 157px; background-position: -201px 0; }
+#startpage #more-about-diandian #blog-transfer-entry:hover { background-position: -201px -110px; }
+#startpage #login-help, #startpage #register-help { margin-top: 10px; height: 15px; }
+#startpage #login-help .pipe, #startpage #register-help .pipe { color: #bbb; padding: 0 10px; font-size: 8px; float: left; line-height: 15px; height: 15px; }
+#startpage .hidden-submit { margin-left: -9999px; height: 0; }
+#startpage .error-tip { width: 228px; padding: 0 20px 0 40px; line-height: 36px; margin-top: -15px; height: 40px; background: url(images/startpage-0410.$6008.png) no-repeat -200px -450px; _background-image: url(images/startpage-0410-ie6.$6008.png); margin-bottom: 20px; color: #69664F; }
+#startpage #reg-stage-choose { background: url(images/startpage-stage.$6008.png) no-repeat; width: 288px; height: 162px; margin-bottom: 20px; }
+#startpage #reg-stage-choose h5 { color: #B4B4B4; font-size: 14px; padding: 20px 0 25px; text-align: center; }
+#startpage #reg-stage-choose label { float: left; padding-top: 50px; width: 70px; margin-left: 24px; cursor: pointer; background: url(images/startpage-stage.$6008.png) no-repeat; }
+#startpage #reg-stage-choose input { margin-right: 5px; }
+#startpage #reg-stage-choose #label-office { background-position: -35px -290px; }
+#startpage #reg-stage-choose #label-student { background-position: -119px -290px; }
+#startpage #reg-stage-choose #label-unknow { background-position: -207px -290px; }
+#startpage #diandian-host { float: right; padding-right: 10px; }
+#startpage .third-party-first, #startpage #show-more-third, #startpage .third-party-last { display: block; }
+#startpage #show-more-third, #startpage .third-party-last {  *margin-top: 18px;
+}

@@ -1,0 +1,106 @@
+body{font-size:12px; font-family:\5B8B\4F53,Arial Narrow,arial,serif; height:100%;}
+table,td,tr,th{font-size:12px;}
+a{color:#FFF; text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* struct */
+.Top{height:123px; position:relative; background:url(../../images/common/top-bg.jpg) no-repeat}
+.Top .userinfo{position:absolute; top:30px; right:14px}
+.Top .userinfo a{color:#000}
+.Top .Bread{position:absolute; top:100px; left:10px; color:#FFF}
+.Top .Bread a{color:#FFF}
+.TopMenu{margin:61px 0px 0px 0px}
+.TopMenu .SubMenu{float:right}
+.TopMenu .SubMenu ul{margin:6px 10px 0px 0px}
+.TopMenu .SubMenu ul li{float:left; width:109px; background:url(../../images/common/sub-sp.gif) no-repeat right}
+.TopMenu .SubMenu ul li a{display:block; width:86px; height:22px; line-height:22px; margin:0px auto; text-align:center}
+.TopMenu .SubMenu ul li a:hover{color:#464646; text-decoration:none; background:url(../../images/common/sub-bg.gif) no-repeat}
+.TopMenu .SubMenu ul li a.hover{color:#464646; text-decoration:none; background:url(../../images/common/sub-bg_2.gif) no-repeat}
+.TopMenu .SubMenu ul li.sub2{width:151px;}
+.TopMenu .SubMenu ul li.sub2 a{width:128px;}
+.TopMenu .SubMenu ul li.sub2 a:hover{background:url(../../images/common/sub-bg1.gif) no-repeat}
+.TopMenu .SubMenu ul li.sub2 a.hover{background:url(../../images/common/sub-bg1_2.gif) no-repeat}
+
+.main{}
+.left{vertical-align:top}
+.leftCon{padding:4px 0px 0px 0px}
+.leftCon .sub{margin:5px 0px 0px 0px}
+.leftLine2{margin:9px 0px 0px 10px}
+.leftLine3{}
+.right{vertical-align:top}
+.rightCon{margin-right:3px; border:1px solid #C2D0DC; border-top:1px solid #C2D0DC}
+
+/* field part */
+.fieldArea{margin:20px 5px 0px 5px}
+.fieldArea fieldset{border:1px solid #C8E1F3; padding:0px 0px 15px 0px}
+.fieldArea legend{width:129px; height:28px; line-height:28px; background:url(../../images/common/legend-bg.gif) no-repeat; text-align:center; font-size:14px; color:#FFF; margin:0px 0px 0px 50px}
+.fieldArea label{float:left; padding:6px 0px 0px 0px; color:#01538A; font-weight:bold}
+.fieldArea .selarea{margin:15px 0px 0px 15px}
+.fieldArea .selarea .item{margin:0px 17px 0px 0px; float:left; display:inline}
+.fieldArea .selarea .item1{width:178px}
+.fieldArea .selarea .item2{width:152px}
+.fieldArea .selarea .item3{width:104px}
+.fieldArea .selarea .item4{width:152px}
+.fieldArea .selarea .item5{width:236px}
+.fieldArea .selarea .item6{width:157px}
+.fieldArea .selarea .item7{width:126px}
+.fieldArea .query2{text-align:center;}
+.fieldArea .query2 table{width:625px; display:inline-block;}
+.fieldArea .query2 input{vertical-align:middle}
+.fieldArea .query2 table td{padding-left:10px}
+.fieldArea .query2 .lblCss{padding-left:20px; background:url(../../images/common/check.gif) no-repeat left 3px; vertical-align:middle; line-height:16px}
+.fieldArea .query2 label.chked{padding-left:20px; background:url(../../images/common/checked.gif) no-repeat left 3px; color:#080; vertical-align:middle; line-height:16px}
+
+/* input */
+input{width:100px;}
+.input1{height:23px; line-height:23px; border:1px solid #E3E3E3; width:100px}
+.input2{height:23px; line-height:23px; border:1px solid #E3E3E3; width:80px}
+.btn1{width:80px; height:23px; line-height:23px; background:url(../../images/common/btn1.gif) no-repeat; border:none; text-align:center; float:left;}
+.btn-sjbj{width:60px; height:23px; line-height:23px; background:url(../../images/common/sjbj.gif) no-repeat; border:none; text-align:center; float:left;}
+.btn-bcexcel{width:91px; height:23px; line-height:23px; background:url(../../images/common/bcexcel.gif) no-repeat; border:none; text-align:center; float:left;}
+.btn-sjzbjs{width:91px; height:23px; line-height:23px; background:url(../../images/common/sjzbjs.gif) no-repeat; border:none; text-align:center; float:left;}
+.leftLine2 .input1{width:133px; margin:0px 10px 0px 0px}
+
+/* table */
+.tableSty1{padding:15px 5px 5px 5px;}
+.tableSty1 table{border:1px solid #B2CBED}
+.tableSty1 table th{height:30px; line-height:30px; background:url(../../images/common/tableth1.gif) repeat-x; color:#095C95; font-size:14px; font-weight:bold; text-align:center; border:1px solid #D0D0D0}
+.tableSty1 table td{height:35px; line-height:35px; border-bottom:1px solid #EDEDED; padding-left:5px}
+.tableSty1 table .hover{background:#E1E9FA}
+.tableSty1 table a{color:#000000}
+.tableSty1 table .thh{background:url(../../images/common/tableth1-over.gif) repeat-x}
+.tableSty1 table .num{color:#095C95; font-weight:bold; text-align:center; padding:0px}
+.tableSty1 table .name1{padding-left:5px; width:190px}
+.State{line-height:30px}
+.State ul{float:right}
+.State ul li{width:78px; float:left}
+.State ul li img{vertical-align:middle}
+
+/* sub page */
+.view1{height:35px; background:url(../../images/common/view1-bg.gif) repeat-x; border-bottom:1px solid #C2D0DC; overflow:hidden}
+.view1 ul{margin:7px 0px 0px 0px}
+.view1 ul li{TEXT-ALIGN: center; float:left; width:117px; background:url(../../images/common/view1-sp.gif) no-repeat right}
+.view1 ul li a{display:block; width:86px; height:22px; line-height:22px; color:#5D5C5C; text-align:center; font-weight:bold; margin:0 auto;}
+.view1 ul li a:hover, .view1 ul li a.hover{background:url(../../images/common/viewbtn1.gif) no-repeat; text-decoration:none}
+.view2{height:70px; background:url(../../images/common/view2-bg.gif) repeat-x; border-bottom:1px solid #C2D0DC}
+
+.view2Con{padding:20px 0px 0px 17px}
+.view2 .item{margin:0px 15px 0px 0px; float:left; display:inline}
+.view2 .item1{width:113px}
+.view2 .item2{width:113px}
+.view2 .item3{width:113px}
+.view2 .item4{width:113px}
+.view2 .item5{width:113px}
+.view2 .item6{width:64px}
+.view2 .item7{width:113px}
+.view2 .item8{width:64px}
+.view3{margin:0px}
+.view3 table{border:none}
+.view3 table th{border-top:none; border-left:none}
+.viewbtn{width:44px; height:23px; background:url(../../images/common/view-btn.gif) no-repeat}
+.viewbtn2{width:44px; height:23px; background:url(../../images/common/view-btn2.gif) no-repeat}
+.viewbtn1{width:60px; height:23px; background:url(../../images/common/lscb.gif) no-repeat}
+.leftLine3 ul{margin:10px 0px 0px 10px}
+.leftLine3 ul li{height:26px}
+.leftLine3 ul li a{display:block; width:189px; height:23px; line-height:23px; color:#000; text-indent:4px}
+.leftLine3 ul li a:hover, .leftLine3 ul li a.hover{background:url(../../images/common/viewbar.gif) no-repeat; text-decoration:none}

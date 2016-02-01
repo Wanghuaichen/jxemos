@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<anychart>
+	<settings>
+		<animation enabled='True' />
+	</settings>
+	<charts>
+		<chart plot_type='CategorizedVertical'>
+			<data_plot_settings default_series_type='Line'>
+				<line_series>
+					<tooltip_settings enabled='true'>
+						<format>站位编号: {%SeriesName}{thousandsSeparator:,numDecimals:0}
+							次数: {%Name}{numDecimals:0}
+							数值: {%YValue}
+							污染因子: {%inid}{numDecimals:0}
+							报警类型: {%wtp}{numDecimals:0}</format>
+					</tooltip_settings>
+				</line_series>
+			</data_plot_settings>
+			<data>
+				<series name='青山湖污水处理厂出水口1'>
+					<point name='1' y='43.1200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='2' y='11.1900'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='3' y='6.7600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='4' y='35.7600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='5' y='11.1000'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='6' y='6.7700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='7' y='42.4700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='8' y='10.9100'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='9' y='6.8600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='10' y='54.9900'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='11' y='10.8400'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='12' y='6.8500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='13' y='56.2500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='14' y='10.8200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='15' y='6.7500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='16' y='53.2900'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='17' y='10.6700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='18' y='6.9000'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='19' y='64.1200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='20' y='10.7000'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='21' y='6.9100'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='22' y='50.7600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='23' y='10.9700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='24' y='6.8600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='25' y='35.6300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='26' y='41.4400'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='27' y='11.1400'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='28' y='6.8500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='29' y='11.4300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='30' y='6.8200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='31' y='35.8000'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='32' y='11.9000'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='33' y='6.8800'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='34' y='36.5700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='35' y='12.5500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='36' y='6.8500'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='37' y='37.5600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='38' y='13.0200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[35]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='39' y='6.7300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+				</series>
+				<series name='红谷滩污水处理厂出水口'>
+					<point name='1' y='7.0900'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='2' y='35.3200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='3' y='7.0800'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='4' y='38.3300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='5' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='6' y='34.2600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='7' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='8' y='34.2600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='9' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='10' y='34.2600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='11' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='12' y='34.2600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='13' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='14' y='30.5300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='15' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='16' y='29.9200'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='17' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='18' y='29.9300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='19' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='20' y='29.9300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='21' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='22' y='29.9300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='23' y='7.0800'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='24' y='29.9300'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='25' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='26' y='33.6400'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='27' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='28' y='34.2700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='29' y='7.0700'>
+						<attributes>
+							<attribute name='inid'><![CDATA[33]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+					<point name='30' y='34.2600'>
+						<attributes>
+							<attribute name='inid'><![CDATA[32]]></attribute>
+							<attribute name='wtp'><![CDATA[6]]></attribute>
+						</attributes>
+					</point>
+				</series>
+			</data>
+			<chart_settings>
+				<title>
+					<text>异常报警数据</text>
+					<background enabled='false' />
+				</title>
+				<chart_background enabled='false' />
+				<axes>
+					<y_axis>
+						<title>
+							<text>平均值</text>
+						</title>
+					</y_axis>
+					<x_axis tickmarks_placement='Center'>
+						<labels />
+						<title>
+							<text>次数</text>
+						</title>
+					</x_axis>
+				</axes>
+			</chart_settings>
+		</chart>
+	</charts>
+</anychart>

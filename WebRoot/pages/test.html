@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>½ø¶ÈÌõ¡ªqifei</title>
+</head>
+<body>
+<form name=loading>
+  <p align=center>
+    <input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#ffffff; background-color:#0099ff; padding:0px; border-style:none;">
+    <br>
+    <input type=text name=percent size=47 style="color:#0099ff; text-align:center; border-width:medium; border-style:none;">
+  </p>
+</form>
+</body>
+</html>
+<script> 
+var bar=0 
+var line="||" 
+var amount="||" 
+count() 
+function count()
+{ 
+bar=bar+2 
+amount =amount + line 
+document.loading.chart.value=amount 
+document.loading.percent.value=bar+"%" 
+if (bar<99) 
+   {setTimeout("count()",200);} 
+else 
+   {window.location = "index.html";} 
+}
+</script>

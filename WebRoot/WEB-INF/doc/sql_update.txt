@@ -1,0 +1,217 @@
+--试图
+--站位表
+--user表
+--warning
+ALTER TABLE T_CFG_MONITOR_PARAM ADD LOLO_COEF float;
+
+alter table t_cfg_station_info add FIX_MAN_PHONE varchar(20); 
+alter table t_cfg_station_info add FIRSTLETTER varchar(40); 
+alter table t_cfg_station_info add MEMO varchar(50);
+alter table t_cfg_station_info add VAL1 varchar(200);
+alter table t_cfg_station_info add VAL2 varchar(200);
+alter table t_cfg_station_info add VAL3 varchar(200);
+alter table t_cfg_station_info add VAL4 varchar(200);
+alter table t_cfg_station_info add VAL5 varchar(200);
+alter table t_cfg_station_info add VAL6 varchar(200);
+alter table t_cfg_station_info add VAL7 varchar(200);
+alter table t_cfg_station_info add VAL8 varchar(200);
+alter table t_cfg_station_info add VAL9 varchar(200);
+alter table t_cfg_station_info add station_no int;
+alter table t_cfg_station_info add station_addr varchar(100);
+alter table t_cfg_station_info add pfqx varchar(100);
+alter table t_cfg_station_info add ctl_type varchar(1);
+alter table t_cfg_station_info add ywdw varchar(100);
+alter table t_cfg_station_info add ywdw_man varchar(50);
+alter table t_cfg_station_info add ywdw_man_phone varchar(100);
+alter table t_cfg_station_info add jsdw varchar(100);
+alter table t_cfg_station_info add ssgl_man varchar(50);
+alter table t_cfg_station_info add ssgl_man_phone varchar(100);
+alter table t_cfg_station_info add scqk varchar(100);
+alter table t_cfg_station_info add show_flag varchar(1);
+alter table t_cfg_station_info add flag_1452 varchar(1);
+alter table t_cfg_station_info add QY_ID varchar(50); 
+alter table t_cfg_station_info add YW_ID varchar(50);
+alter table t_cfg_station_info add LOGIN_TIME_1 datetime ;
+alter table t_cfg_station_info add LOGIN_TIME_2 datetime ;
+alter table t_cfg_station_info add LOGIN_TIME_3 datetime ;
+alter table t_cfg_station_info add LOGIN_TIME_4 datetime ;
+alter table t_cfg_station_info add LOGIN_TIME_5 datetime ;
+alter table t_cfg_station_info add XYDBSDM varchar(200);
+alter table t_cfg_station_info add ISACTIVE varchar(3);
+alter table t_cfg_station_info add QY_STATE varchar(1) default 0;
+update t_cfg_station_info set qy_state='0';
+
+alter table t_monitor_event add REMARK varchar(200);
+
+alter table t_monitor_real_day add is_gz varchar(1);
+
+alter table T_MONITOR_REAL_HOUR_SH add DB_TIME DATETime default GetDate();
+
+alter table T_MONITOR_REAL_MONTH add VD varchar(100);
+
+alter table T_MONITOR_REAL_REAL add DB_TIME DATEtime default GetDate();
+
+alter table T_MONITOR_REAL_YEAR add VD varchar(100);
+
+alter table T_SYS_USER add IS_VIEW_ALL_STATION int;
+alter table T_SYS_USER add IS_WAP varchar(2);
+alter table T_SYS_USER add IS_VERIFY int;
+alter table T_SYS_USER add LOGIN_TIME DATEtime ;
+alter table T_SYS_USER add YW_ROLE varchar(2);
+alter table T_SYS_USER add AREA_ID varchar(40);
+alter table T_SYS_USER add R_NEW_RECORD varchar(2);
+alter table T_SYS_USER add R_NEW_NOTE varchar(2);
+
+
+update T_CFG_MONITOR_PARAM set hi=null where hi=0;
+update T_CFG_MONITOR_PARAM set lo=null where lo=0;
+update T_CFG_MONITOR_PARAM set hihi=null where hihi=0;
+update T_CFG_MONITOR_PARAM set lolo=null where lolo=0;
+
+create table T_MONITOR_WARNING
+(
+  STATION_ID    varchar(14) not null,
+  M_TIME        DATEtime not null,
+  VAL01         varchar(100),
+  VAL02         varchar(100),
+  VAL03         varchar(100),
+  VAL04         varchar(100),
+  VAL05         varchar(100),
+  VAL06         varchar(100),
+  VAL07         varchar(100),
+  VAL08         varchar(100),
+  VAL09         varchar(100),
+  VAL10         varchar(100),
+  VAL11         varchar(100),
+  VAL12         varchar(100),
+  VAL13         varchar(100),
+  VAL14         varchar(100),
+  VAL15         varchar(100),
+  VAL16         varchar(100),
+  VAL17         varchar(100),
+  VAL18         varchar(100),
+  VAL19         varchar(100),
+  VAL20         varchar(100),
+  DATA_GEN_FLAG varchar(1),
+  CHECK_FLAG    varchar(1),
+  IS_VALID      varchar(1),
+  VAL21         varchar(100),
+  VAL22         varchar(100),
+  VAL23         varchar(100),
+  VAL24         varchar(100),
+  VAL25         varchar(100),
+  VAL26         varchar(100),
+  VAL27         varchar(100),
+  VAL28         varchar(100),
+  VAL29         varchar(100),
+  VAL30         varchar(100),
+  DB_TIME       DATEtime default GetDate(),
+  VD            varchar(100)
+);
+alter table T_MONITOR_WARNING
+  add constraint PK_T_T_MONITOR_WARNING primary key (STATION_ID, M_TIME);
+  
+create table T_CFG_STATION_COMMENT
+(
+  INSERT_TIME DATEtime,
+  USERNAME    varchar(200),
+  INFO        varchar(1024),
+  STATION_ID  varchar(14)
+);
+
+update t_cfg_parameter set parameter_type_name='仪器状态' where  parameter_type_id='meachine_state';
+
+update t_cfg_parameter set parameter_type_name='通讯状态' where parameter_type_id='comm_state';
+
+update t_cfg_parameter set parameter_type_name='审核状态' where parameter_type_id='data_check_type';
+
+update t_cfg_parameter set parameter_type_name='协议类型' where parameter_type_id='protocal_type';
+update t_cfg_parameter set parameter_type_name='事件类型' where parameter_type_id='event_type';
+update t_cfg_parameter set parameter_type_name='执行标准' where parameter_type_id='exe_standard';
+update t_cfg_parameter set parameter_type_name='功能区' where parameter_type_id='function_area';
+update t_cfg_parameter set parameter_type_name='排污去向' where parameter_type_id='let_place';
+update t_cfg_parameter set parameter_type_name='排污方式' where parameter_type_id='let_rule';
+update t_cfg_parameter set parameter_type_name='监测方式' where parameter_type_id='mon_mode';
+update t_cfg_parameter set parameter_type_name='企业规模' where parameter_type_id='station_size';
+update t_cfg_parameter set parameter_type_name='企业类型' where parameter_type_id='enterprise_type';
+update t_cfg_parameter set parameter_type_name='监测类型' where parameter_type_id='monitor_type';
+update t_cfg_parameter set parameter_type_name='数据来源' where parameter_type_id='data_gen_flag';
+update t_cfg_parameter set parameter_type_name='报警类型' where parameter_type_id='warn_type';
+
+update t_cfg_parameter set parameter_type_name='断面类型' where parameter_type_id='surface_type';
+update t_cfg_parameter set parameter_type_name='报警处理状态' where parameter_type_id='warn_handle_status';
+update t_cfg_parameter set parameter_type_name='通道类型' where parameter_type_id='channels_type';
+update t_cfg_parameter set parameter_type_name='测试参数类型' where parameter_type_id='test_param_type';
+ 
+ 
+insert into t_cfg_station_col(col_id,col_name) values(1,'');
+insert into t_cfg_station_col(col_id,col_name) values(2,''); 
+insert into t_cfg_station_col(col_id,col_name) values(3,'');
+insert into t_cfg_station_col(col_id,col_name) values(4,''); 
+insert into t_cfg_station_col(col_id,col_name) values(5,''); 
+insert into t_cfg_station_col(col_id,col_name) values(6,''); 
+insert into t_cfg_station_col(col_id,col_name) values(7,''); 
+insert into t_cfg_station_col(col_id,col_name) values(8,''); 
+insert into t_cfg_station_col(col_id,col_name) values(9,''); 
+
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(1,'部门管理','/pages/system/tab_dept/','1');
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(2,'用户管理','/pages/system/user/','2'); 
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(3,'站位管理','/pages/system/station/','3'); 
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(4,'行业管理','/pages/system/trade/','4');  
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(5,'视频设置','/pages/system/sp/','5'); 
+
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(6,'短信设置','/pages/system/msg/','6'); 
+ 
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(7,'污染源信息维护','/pages/system/station/wry/update.jsp','7');
+ 
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(8,'监测指标维护','/pages/system/station/infectant/update.jsp','8');
+  
+    
+insert into t_sys_res_new(res_id,res_name,res_url,res_order) 
+ values(9,'备注修改','/pages/station_new/bz_update.jsp','9');
+  
+    
+insert into t_sys_res_new(res_id,res_name,res_url,flag_acl,res_order) 
+  values(10,'站位属性查看','/pages/system/station/view.jsp','0','10');
+  
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'A', N'农、林、牧、渔业', N'root', 1, 0, N'', N'', N'', N'NLMYY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'B', N'采矿业', N'root', 1, 0, N'', N'', N'', N'CKY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'C', N'制造业', N'root', 1, 0, N'', N'', N'', N'ZZY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, 
+FocusType, Comments, UpdateDate, Spell) VALUES (N'D', N'电力、燃气及水的生产和供应业', 
+N'root', 1, 0, N'', N'', N'', N'DLRQJSDSCHGYY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, 
+FocusType, Comments, UpdateDate, Spell) VALUES (N'E', N'建筑业', N'root', 1, 0, N'', N'', 
+N'', N'JZY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, 
+FocusType, Comments, UpdateDate, Spell) VALUES (N'F', N'交通运输、仓储和邮政业', N'root', 1, 
+0, N'', N'', N'', N'JTYSCCHYZY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'G', N'信息传输、计算机服务和软件业', N'root', 1, 0, N'', N'', N'', N'XXCSJSJFWHRJY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'H', N'批发和零售业', N'root', 1, 0, N'', N'', N'', N'PFHLSY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'P', N'教育业', N'root', 1, 0, N'', N'', N'', N'JYY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'Q', N'卫生、社会保障和社会福利业', N'root', 1, 0, N'', N'', N'', N'WSSHBZHSHFLY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'R', N'文化、体育和娱乐业', N'root', 1, 0, N'', N'', N'', N'WHTYHYLY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'S', N'公共管理和社会组织', N'root', 1, 0, N'', N'', N'', N'GGGLHSHZZ');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'L', N'租赁和商务服务业', N'root', 1, 0, N'', N'', N'', N'ZLHSWFWY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'M', N'科学研究、技术服务和地质勘查业', N'root', 1, 0, N'', N'', N'', N'KXYJJSFWHDZKCY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'N', N'水利、环境和公共设施管理业', N'root', 1, 0, N'', N'', N'', N'SLHJHGGSSGLY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'T', N'国际组织', N'root', 1, 0, N'', N'', N'', N'GJZZ');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'O', N'居民服务和其他服务业', N'root', 1, 0, N'', N'', N'', N'JMFWHQTFWY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'P', N'教育', N'root', 1, 0, N'', N'', N'', N'JY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'K', N'房地产业', N'root', 1, 0, N'', N'', N'', N'FDCY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'J', N'金融业', N'root', 1, 0, N'', N'', N'', N'JRY');
+INSERT INTO T_CFG_TRADE (IndustryTypeCode, IndustryTypeName, ParentNode, UseOrNot, NewOrNot, FocusType, Comments, UpdateDate, Spell) VALUES (N'I', N'住宿和餐饮业', N'root', 1, 0, N'', N'', N'', N'ZSHCYY');

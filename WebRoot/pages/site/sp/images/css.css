@@ -1,0 +1,105 @@
+BODY {
+	FONT-SIZE: 9pt; TEXT-ALIGN: center
+}
+TR {
+	FONT-SIZE: 9pt
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 16px
+}
+.p6 {
+	FONT-SIZE: 12pt
+}
+.p7 {
+	FONT-SIZE: 10.8pt
+}
+.p8 {
+	FONT-SIZE: 10.5pt; LINE-HEIGHT: 20px
+}
+.p9 {
+	FONT-SIZE: 9pt
+}
+.border1 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.shadow {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=1); COLOR: #ff0000
+}
+.blue {
+	FONT-SIZE: 9pt; COLOR: #406ec2; TEXT-DECORATION: underline
+}
+.white {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.red {
+	COLOR: #c70506; TEXT-DECORATION: underline
+}
+.yellow {
+	COLOR: #ffb900; TEXT-DECORATION: none
+}
+.green {
+	COLOR: #038c54; TEXT-DECORATION: underline
+}
+.coffee {
+	FONT-SIZE: 9pt; COLOR: #a70404; TEXT-DECORATION: none
+}
+.purple {
+	FONT-SIZE: 9pt; COLOR: #70017a; TEXT-DECORATION: none
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 1.5
+}
+.bt_white {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.bt_link {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+.bt_content {
+	FONT-SIZE: 10.5pt; LINE-HEIGHT: 22px; TEXT-DECORATION: none
+}
+.bt_time {
+	FONT-SIZE: 7pt; COLOR: #999999; FONT-FAMILY: Verdana
+}
+.bt_date {
+	FONT-SIZE: 7pt; COLOR: #999999; FONT-FAMILY: Verdana
+}
+.bt_more {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+.bt_report_title {
+	FONT-SIZE: 10.5pt; COLOR: #000000
+}
+A.white {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.bt_more {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.bt_more:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #1E52C1; TEXT-DECORATION: none 
+}
+.table-qyzxbj {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(qyzx_6.gif); BACKGROUND-REPEAT: no-repeat
+}
+.table-zlbj {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(zlaq_6.gif); BACKGROUND-REPEAT: no-repeat
+}
+.table-gqxx-bj {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(gqxx_7.gif); BACKGROUND-REPEAT: no-repeat
+}
+.table-indexbj {
+	BACKGROUND-POSITION: 50% bottom; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(index_33.gif); BACKGROUND-REPEAT: no-repeat
+}
+.input {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; LINE-HEIGHT: 13pt; BORDER-BOTTOM: #000000 1px solid
+}

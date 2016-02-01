@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<anychart>
+	<settings>
+		<animation enabled='True' />
+	</settings>
+	<charts>
+		<chart plot_type='CategorizedVertical'>
+			<data_plot_settings default_series_type='Bar'
+				enable_3d_mode='True' z_aspect='2.5'>
+				<bar_series point_padding='2' group_padding='1'>
+					<tooltip_settings enabled='true'>
+						<format>
+{%Name}
+Value: {%YValue}
+						</format>
+					</tooltip_settings>
+				</bar_series>
+			</data_plot_settings>
+			<chart_settings>
+				<title enabled='true'>
+					<text>污水汇总图</text>
+				</title>
+				<axes>
+					<y_axis>
+						<title>
+							<text>累积量</text>
+						</title>
+					</y_axis>
+
+					<x_axis>
+						<labels />
+						<title>
+							<text>成分</text>
+						</title>
+					</x_axis>
+				</axes>
+				<chart_background enabled='false' />
+			</chart_settings>
+			<data>
+				<series name='Series 1' palette='Default'>
+					<point name='COD/Kg' y='16021.25' />
+					<point name='氮氨/Kg' y='7358.768' />
+					<point name='总氮/Kg' y='0.0' />
+					<point name='总磷/Kg' y='0.0' />
+					<point name='累积流量/m3' y='66153.875' />
+
+				</series>
+			</data>
+		</chart>
+	</charts>
+</anychart>

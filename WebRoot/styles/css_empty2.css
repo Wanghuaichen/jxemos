@@ -1,0 +1,22 @@
+
+.btn{
+
+            width:80px; height:23px; line-height:23px; background:url(../images/common/btn1.gif) no-repeat; border:none; text-align:center;
+
+
+            }
+
+.hide{
+display:none;
+}
+
+.date{width:90px}
+
+*{
+ font-size:12px;
+}
+.date{width:90px}
+BODY {
+padding: 0px;
+ margin: 0px;
+ }

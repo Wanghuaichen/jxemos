@@ -1,0 +1,15 @@
+/* style1 */
+.iDiv{position:absolute; height:22px; font-size:12px; color:#333; line-height:22px; text-indent:4px; vertical-align:middle; border:1px solid #ABC2E4; cursor:default; background:url(../../images/common/droparrow.gif) no-repeat right}
+.iDiv_over{color:#f96; background:url(../../images/common/droparrowover.gif) no-repeat right}
+.iDiv_out{color:#333}
+.cDiv{position:absolute; moz-user-select:none; border:1px solid #ABC2E4; cursor:default; background:#f7f7f7; overflow:auto; z-index:1}
+.cDiv ul{font-size:12px; listStyle:none; margin:0; padding:0}
+.cDiv ul li{height:22px; line-height:22px; text-indent:4px}
+
+/* style2 */
+.iDiv2{position:absolute; height:23px; font-size:12px; color:#333; line-height:23px; text-indent:4px; vertical-align:middle; cursor:default; background:url(../../images/common/selectbar.gif) no-repeat;}
+.iDiv_over2{color:#f96; background:url(../../images/common/selectbarover.gif) no-repeat;}
+.iDiv_out2{color:#333}
+.cDiv2{position:absolute; moz-user-select:none; border:1px solid #FFDE7C; border-top:none; cursor:default; background:#f7f7f7; overflow:auto; z-index:1}
+.cDiv2 ul{font-size:12px; listStyle:none; margin:0; padding:0}
+.cDiv2 ul li{height:23px; line-height:23px; text-indent:4px}

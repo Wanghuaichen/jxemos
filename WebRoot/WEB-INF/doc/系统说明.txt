@@ -1,0 +1,33 @@
+系统首页 /pages/home/index.jsp
+ 菜单维护 GIS链接修改
+ 
+数据库更新脚本 /WEB-INF/doc/sql_update.txt
+短信平台 数据库更新 /WEB-INF/doc/msg.sql
+数据解密dll   /WEB-INF/swj2.0.dll
+
+
+
+
+系统配置文件 /WEB-INF/classes/app.properties
+#默认选中的监测类型
+default_station_type=5
+#地区
+area_id=33
+#默认选中的地区
+default_area_id=3301
+#中心平台入口地址校验
+zh_url=http://192.168.85.92/CenterUserInfo/login_success.asp
+
+#是否需要解密 1需要 0不需要 天津数据不加密，配置为0即可
+decode=1
+
+#数据库链接配置
+
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@192.168.1.20:1521:qa
+user=testemos
+pwd=testemos
+type=oracle
+
+
+
